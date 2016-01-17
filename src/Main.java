@@ -37,7 +37,10 @@ public class Main extends Application implements EventHandler<ActionEvent>{
         });
         */
 
-        button.setOnAction(e -> System.out.println("This is using Lambda Expressions"));
+        button.setOnAction(e -> {
+            System.out.println("This is using Lambda Expressions");
+            System.out.println("Clean code Lambda Expressions");
+        });
 
 
 
