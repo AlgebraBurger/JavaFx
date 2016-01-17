@@ -28,12 +28,17 @@ public class Main extends Application implements EventHandler<ActionEvent>{
 
         //button.setOnAction(this);
 
+        /*
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("This is an Anonymous Class Baby");
             }
         });
+        */
+
+        button.setOnAction(e -> System.out.println("This is using Lambda Expressions"));
+
 
 
 
