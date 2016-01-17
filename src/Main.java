@@ -26,7 +26,16 @@ public class Main extends Application implements EventHandler<ActionEvent>{
 
         button.setText("Click Me");
 
-        button.setOnAction(this);
+        //button.setOnAction(this);
+
+        button.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("This is an Anonymous Class Baby");
+            }
+        });
+
+
 
         StackPane layout = new StackPane();
         layout.getChildren().add(button);
